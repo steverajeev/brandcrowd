@@ -1,10 +1,10 @@
 <section>
-    <div class="container">
+    <div class="container-fluid">
      <div class="logomaker">
       <h1>Logo Maker</h1>
       <p>Make a beautiful logo in seconds. Try it Free</p>
-      <input type="text" placeholder="Enter Your Business Name">
-      <button>CREATE LOGOS</button><br>
+      <input [(ngModel)]="bussinessname" type="text" placeholder="Enter Your Business Name">
+      <button (click)="logoselection()">CREATE LOGOS</button><br>
       <i class="fa-light fa-circle-play"></i>see how it work
       <img src="/assets/logo//hero-branding-1.png">
      </div>
@@ -25,13 +25,13 @@
            <div class="about-2">
                <h1>1. Generate logo designs</h1>
                <p>To get started with BrandCrowd's logo maker just enter your business name and let our Logo Maker create amazing logo designs, instantly. You can browse thousands of logos tailored with your business name and find a design that's perfect for you. Looking for a more specific logo? No problem! You can enter keywords to refine the logos and find a design that really suits your business.</p><br>
-               <button>Generate logo designs</button>
+               <button (click)="logoselection()">Generate logo designs</button>
                <img src="/assets/logo/advantages-how-logo-step-1.png">               
             </div>
             <div class="about-3">
                 <h1>2. Customize your logo</h1>
                 <p>Once you've found a logo you love it's a breeze to change the logo colors, fonts and layout. Moving the logo icon or adjusting the spacing of the design is simple - there's virtually no limit to what you can do with our logo maker tool. You can create something bespoke by adding gradient colors, additional shapes or some curved text - it's easy to create your perfect logo.</p>
-                <button>Create My Logo</button>
+                <button (click)="logoselection()">Create My Logo</button>
                 <img src="/assets/logo//advantages-how-logo-step-2.png">
             </div>
             <div class="about-2">
@@ -44,44 +44,44 @@
                     <li><i class="fa-solid fa-check"></i>Multiple variations of your logo</li>
                 </ul>
                 <img class="png" src="/assets/logo//advantages-how-logo-step-3.png">
-                <button class="btn">Browse Handcraft Logos</button>
+                <button class="btn" (click)="logoselection()">Browse Handcraft Logos</button>
             </div>
             <div class="createlogo">
                 <h1>Get started with BrandCrowd's Logo Maker</h1>
                 <p>Enter your business name and we'll start creating logos in seconds...</p>
                 <input type="text" placeholder="Enter Your Business Name">
-                <button>CREATE LOGOS</button><br>
+                <button (click)="logoselection()">CREATE LOGOS</button><br>
             </div>
             <div class="about-4">
                 <h1>What you get with BrandCrowd's logo maker</h1>
             </div>
             <div>
-                <table>
+                <table class="table-2">
                     <tr>
                         <td>
-                           <img src="/assets/logo//p.png">
+                           <img class="img" src="/assets/logo//p.png">
                            <h1>Premium Logo Designs</h1>
                            <p>Every logo in our library is uniquely handcrafted by professional designers from across the globe.</p>
                         </td>
                         <td>
-                            <img src="/assets/logo//file.png">
+                            <img class="img" src="/assets/logo//file.png">
                             <h1>All The Files You Need</h1>
                             <p>Get high-res logo files (PNG and JPG) for your website & vector files (SVG, EPS and PDF) ready for print. </p>
                         </td>
                         <td>
-                            <img src="/assets/logo//color.png">
+                            <img class="img" src="/assets/logo//color.png">
                             <h1>Color and Layout Variations</h1>
                             <p>Choose from several layout options and use any color for your logo.</p>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <img src="/assets/logo//card.png">
+                            <img class="img" src="/assets/logo//card.png">
                             <h1>Business Card Templates</h1>
                             <p>Choose from thousands of business card templates, customised with your logo colors to match your brand.</p>
                         </td>
                         <td>
-                            <img src="/assets/logo//social.png">
+                            <img class="img" src="/assets/logo//social.png">
                             <h1>Social Media Templates</h1>
                             <p>Create social media designs including Instagram posts & stories automatically customized with your logo colors.</p>
                         </td>
@@ -93,17 +93,17 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="/assets/logo//pen.png">
+                            <img class="img" src="/assets/logo//pen.png">
                             <h1>Unlimited Customization</h1>
                             <p>Change the layout, colors and font on your logo. Get unlimited edits and create as many variations as you want.</p>
                         </td>
                         <td>
-                            <img src="/assets/logo//support.png">
+                            <img class="img" src="/assets/logo//support.png">
                             <h1>Support</h1>
                             <p>With 24/7 support from our team of logo experts, you're always looked after from logo creation to download and beyond.</p>
                         </td>
                         <td>
-                            <img src="/assets/logo//royal.png">
+                            <img class="img" src="/assets/logo//royal.png">
                             <h1>Royalty Free Logos</h1>
                             <p>Get a worldwide, irrevocable license to use your logo for any commercial and non-commercial purpose.</p>
                         </td>
@@ -115,20 +115,20 @@
                 <div class="about-2">
                     <h1>Your business is your logo, your logo is your business</h1>
                     <p>Everyone wants the perfect logo for their business. The good news is you can create a beautiful logo with BrandCrowd's logo maker. Our online logo maker lets you generate designs perfectly suited to your business from a professionally designed library of logos. There's no stock icons here - every logo has been handcrafted and is exclusive to BrandCrowd. So, if you want the best logo for your business then start customising a logo today. You can edit all our logos for free and make a logo you love in minutes - who doesn't like the sound of that?</p>
-                    <button>Find Your Logo</button>
+                    <button (click)="logoselection()">Find Your Logo</button>
                     <img src="/assets/logo/logos.png">
                 </div>
                 <div class="about-3">
                     <h1>Create a beautiful logo with a few clicks </h1>
                     <p>At BrandCrowd we know startups, entrepreneurs and new businesses are short on time - in fact who isn't? We also know that you want a logo tool that's not just free to try, but super simple to use. That's why we've spent many hours perfecting our logo maker, so you can get that amazing logo with zero fuss - Simply find a logo, customize it and download the logo files. You can have a beautiful logo for your business in just a few clicks.</p>
-                    <button>Create Your Logo</button>
+                    <button (click)="logoselection()">Create Your Logo</button>
                     <img src="/assets/logo/features-logo-maker.png">
                 </div>
                 <div class="about-2">
                     <h1>Build your entire Brand, not just the perfect logo</h1>
-                    <p>There's a lot more to starting a successful business than getting a fab logo - but making sure you put that logo to work is still crucial. At BrandCrowd, we make sure that once you've created your new logo you don't miss the opportunity to get branded business cards, social media pics, banners and covers - all easily customisable with our suite of design editors. You can also put your new logo on stationery, including envelopes and letterheads. Want more? We can also get your branded merch, office supplies and stationery printed - making BrandCrowd the one-stop-shop for launching your business.</p>
-                    <button>Get Your Logo</button>
-                    <img src="/assets/logo/features-branding.png">
+                    <p class="para">There's a lot more to starting a successful business than getting a fab logo - but making sure you put that logo to work is still crucial. At BrandCrowd, we make sure that once you've created your new logo you don't miss the opportunity to get branded business cards, social media pics, banners and covers - all easily customisable with our suite of design editors. You can also put your new logo on stationery, including envelopes and letterheads. Want more? We can also get your branded merch, office supplies and stationery printed - making BrandCrowd the one-stop-shop for launching your business.</p>
+                    <button class="btn btn-warning" (click)="logoselection()">Get Your Logo</button>
+                    <img class="png2" src="/assets/logo/features-branding.png">
                 </div>     
             </div>
             <div class="logos">
@@ -137,39 +137,39 @@
                     <p>Whether you need a beauty logo, a logo for your real estate business or even a logo for your new startup, we help you generate thousands of logo designs in seconds.</p>
                 </div>
                 <table class="logo1">
-                    <tr>
+                    <tr >
                         <td><img src="/assets/logo/2.PNG"></td>
                         <td><img src="/assets/logo/3.png"></td>
-                        <td><img src="/assets/logo/4.png"></td>
-                        <td><img src="/assets/logo/18.png"></td>                        
+                        <td class="col-2"><img src="/assets/logo/4.png"></td>
+                        <td class="col-1"><img src="/assets/logo/18.png"></td>                        
                     </tr>
-                    <tr>
+                    <tr class="col-2">
                         <td><img src="/assets/logo/6.png"></td>                        
                         <td><img src="/assets/logo/7.png"></td>                        
-                        <td><img src="/assets/logo/8.png"></td>                        
-                        <td><img src="/assets/logo/9.png"></td>                        
+                        <td class="col-2"><img src="/assets/logo/8.png"></td>                        
+                        <td class="col-1"><img src="/assets/logo/9.png"></td>                        
                     </tr>
-                    <tr>
+                    <tr class="col-3">
                         <td><img src="/assets/logo/10.png"></td>                        
                         <td><img src="/assets/logo/11.png"></td>                        
-                        <td><img src="/assets/logo/12.png"></td>                        
-                        <td><img src="/assets/logo/13.png"></td>                        
+                        <td class="col-2"><img src="/assets/logo/12.png"></td>                        
+                        <td class="col-1"><img src="/assets/logo/13.png"></td>                        
                     </tr>
-                    <tr>
+                    <tr class="col-4">
                         <td><img src="/assets/logo/14.png"></td>                        
                         <td><img src="/assets/logo/15.png"></td>                        
-                        <td><img src="/assets/logo/16.png"></td>                        
-                        <td><img src="/assets/logo/17.png"></td>                        
+                        <td class="col-2"><img src="/assets/logo/16.png"></td>                        
+                        <td class="col-1"><img src="/assets/logo/17.png"></td>                        
                     </tr>
 
                 </table>
-                <button>Browse Handcraft Logos</button>
+                <button (click)="logoselection()">Browse Handcraft Logos</button>
             </div>
             <div class="createlogo">
                 <h1>Get started with BrandCrowd's Logo Maker</h1>
                 <p>Enter your business name and we'll start creating logos in seconds...</p>
                 <input type="text" placeholder="Enter Your Business Name" style="border: rgb(147, 147, 147);">
-                <button>CREATE LOGOS</button><br>
+                <button (click)="logoselection()">CREATE LOGOS</button><br>
             </div>
             <div class="dream">
                 <div>             
@@ -177,11 +177,11 @@
                      <p>Why should you use BrandCrowd Logo Maker to create your logo?</p>
                      <div class="list">
                             <ul>
-                                <li><i class="fa-solid fa-circle-check"></i><h1>Unique designs</h1></li>
+                                <li><i class="bi bi-check-circle"></i><h1>Unique designs</h1></li>
                                 <li><p>Our 101,000+ designs have all been handcrafted by a community of top designers. Get a stunning logo - always!</p></li>
-                                <li><i class="fa-solid fa-circle-check"></i><h1>Free to use </h1></li>
+                                <li><i class="bi bi-check-circle"></i><h1>Free to use </h1></li>
                                 <li><p>BrandCrowd Logo Maker is free to use. Browse thousands of different logo designs, edit and save as many as you like.</p></li>
-                                <li><i class="fa-solid fa-circle-check"></i><h1>It’s fast - create a logo in 2 minutes</h1></li>
+                                <li><i class="bi bi-check-circle"></i><h1>It’s fast - create a logo in 2 minutes</h1></li>
                                 <li><p>Pick a design you like and start editing it. In minutes you can make a logo you will love.</p></li>
                             </ul>
                     </div>
@@ -191,7 +191,7 @@
             <div class="review">
                 <h1>These businesses loved using BrandCrowd</h1>
                 <div class="review-1">
-                    <div class="mySlides">
+                    <div class="carousel-caption">
                         <q>I got my logo and Web page up and running in no time, and there's more: option for as many edits as I see fit, giving me the right flexibility throughout my subscription.</q>
                         <p class="author">- John Keats</p>
                         <i class="fa-solid fa-star"></i>
@@ -202,7 +202,7 @@
                         
                       </div>
                     
-                      <div class="mySlides">
+                      <div class="carousel-caption">
                         <q>Had a great experience designing a logo and getting labels printed. Easy, and professional. Very good price and I received my product fast. I highly recommend them. Thank you BrandCrowd!</q>
                         <p class="author">- Ernest Hemingway</p>
                         <i class="fa-solid fa-star"></i>
@@ -212,7 +212,7 @@
                         <i class="fa-solid fa-star"></i>
                       </div>
                     
-                      <div class="mySlides">
+                      <div class="carousel-caption">
                         <q>I went on Google to find sites to help build my business products logo,flyers,etc . They have done a wonderful job with assisting with my needs .I am not tech savvy but the website is easy to navigate .thank you!!!!</q>
                         <p class="author">- Thomas A. Edison</p>
                         <i class="fa-solid fa-star"></i>
@@ -222,7 +222,7 @@
                         <i class="fa-solid fa-star-half-stroke"></i>
                       </div>
 
-                      <div class="mySlides">
+                      <div class="carousel-caption">
                         <q>Excellent service. In addition and to my surprise, I found out you are an Aussie firm. Having lived in Sydney from 1983 to 2003, I learnt to trust the quality and big standards of all Aussie enterprises.</q>
                         <p class="author">- Linous White</p>
                         <i class="fa-solid fa-star"></i>
@@ -232,7 +232,7 @@
                         <i class="fa-solid fa-star-half-stroke"></i>
                       </div>
                     
-                      <div class="mySlides">
+                      <div class="carousel-caption">
                         <q>I have tried a lot of marketing & logo design programs over the years. I am also usually pretty stingy about paying monthly for things since I am a small business I try to keep a low overhead so I just buy the logos and cancel my subscription.</q>
                         <p class="author">- Jody Seacur</p>
                         <i class="fa-solid fa-star"></i>
@@ -243,7 +243,7 @@
                         
                       </div>
                     
-                      <div class="mySlides">
+                      <div class="carousel-caption">
                         <q>BrandCrowd is so easy to use! I created my business logo within 10 minutes and now have all the templates required for business cards, emails, letterhead, clothing, you name it! I highly recommend them if you are looking to create your own branding.</q>
                         <p class="author">- joel Eady</p>
                         <i class="fa-solid fa-star"></i>
@@ -313,7 +313,7 @@
                 <h1>Get started with BrandCrowd's Logo Maker</h1>
                 <p>Enter your business name and we'll start creating logos in seconds...</p>
                 <input type="text" placeholder="Enter Your Business Name" style="border: rgb(147, 147, 147);">
-                <button>CREATE LOGOS</button><br>
+                <button (click)="logoselection()">CREATE LOGOS</button><br>
             </div>
             <div class="tips">
                  <h1>Logo design tips, tricks and insights</h1>
@@ -368,13 +368,13 @@
                      <p>Creating that perfect logo with BrandCrowd is easy - but just in case, here's some FAQs to help you get started.</p>
                </div>
                <div class="ques">
-                    <table>
+                    <table class="ques1">
                      <tr>
                         <td>
                             <h1>What is the BrandCrowd logo maker?</h1>
                             <p>BrandCrowd's logo maker allows you to generate and customize stand-out logos in minutes. BrandCrowd gives you access to a professional library of thousands of customizable logo designs - making creating your logo inexpensive and straightforward. Our logos, created by designers around the globe, give you unlimited possibilities.</p>
                         </td>
-                        <td>
+                        <td class="ques2">
                             <h1>Do I get a transparent version of my logo?</h1>
                             <p>Absolutely! A transparent version of your logo is provided when you download in a PNG format. Even if you've chosen a solid background for your logo, we'll provided a version of your logo with a transparent background for your convenience - perfect for use on your website.</p>
                         </td>
@@ -384,27 +384,27 @@
                             <h1>What layout works best for logos?</h1>
                             <p>You want your logo to standout above competitors. Your logo should tell your audience, customers, fans and competitors that you mean business. There's no single answer for what layout your logo should have - but keep in mind what message your want to convey with your logo. A simple layout can convey elegance and sophistication, while a more dynamic layout can mean fun or adventure. Search our logo collection for a design then customize it according to your needs. Remember you can also research logos - pay attention to their layout, color choices, design themes and fonts.</p>
                         </td>
-                        <td>
+                        <td class="ques2">
                             <h1>What text should I choose for my logo?</h1>
                             <p>What's in a name? If you haven't already got a name for your logo then here's some tips. You want to use text and a name that describes your business, the caliber of service you provide and one that resonates with customers. If you're stumped, research other companies with logos for inspiration. Remember your logo should have a catchy and non-offensive name that's sits well with the whole team. Try to keep the logo text short and simple using a bold clean font, so it's easily recognisable on your logo.</p>
                         </td>
                      </tr>
                      <tr>
-                        <td>
+                        <td class="ques2">
                             <h1>How do I find the right logo?</h1>
                             <p>Simply put, logos are visual representations of what your business is all about. The logo you choose will become synonymous with your brand, so it pays to choose wisely. BrandCrowd offers access to a library packed with logos created by professional designers from around the world. Find the perfect logos is as simple as searching the library, customizing the logo to your liking and downloading. Remember, keeping your logo simple with three or fewer colors and clean fonts produces an effective, eye-catching logo.</p>
                         </td>
-                        <td>
+                        <td class="ques2">
                             <h1>How do I add a tagline to my logo?</h1>
                             <p>It's easy to enhance your logo with a tagline. A tagline is usually added at the bottom of your logo and consists of a short piece of text like a motto or catchphrase. Taglines that work include three to seven memorable words. Like an advertising jingle or popular song, this additional text on your logo helps further associate your design with your brand. You can add a tagline in a few clicks with BrandCrowd's Logo Maker.</p>
                         </td>
                      </tr>
                      <tr>
-                        <td>
+                        <td class="ques2">
                             <h1>Can I download my logo instantly?</h1>
                             <p>Yes. Now that you've created the perfect logo, it's time to put your design to work. BrandCrowd allows you to download your logo instantly and gives you access to all the files you need. BrandCrowd provides files perfect for producing marketing and print materials, for using on your website or blog and for branding those social media posts. All the logo files you need are available in your account.</p>
                         </td>
-                        <td>
+                        <td class="ques2">
                             <h1>Do I get my logo in vector format?</h1>
                             <p>Of course. Your logo from BrandCrowd is provided in several formats including vector files (PDF and SVG). No matter how large you want your logo, it'll look great. Vector files are used to create print layouts and illustrations as they ensure the same quality appearance across all formats and sizes.</p>
                         </td>

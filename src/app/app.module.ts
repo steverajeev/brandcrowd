@@ -12,7 +12,11 @@ import { FooterComponent } from './admin/footer/footer.component';
 import { RegisterComponent } from './admin/register/register.component';
 import { ContactusComponent } from './admin/contactus/contactus.component';
 import { AboutusComponent } from './admin/aboutus/aboutus.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LogoselectionComponent } from './admin/logomaker/logoselection/logoselection.component';
+import { EditlogoComponent } from './admin/logomaker/logoselection/editlogo/editlogo.component';
+
 
 @NgModule({
   declarations: [
@@ -25,12 +29,16 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     RegisterComponent,
     ContactusComponent,
-    AboutusComponent
+    AboutusComponent,
+    LogoselectionComponent,
+    EditlogoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgbModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

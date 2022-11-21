@@ -30,7 +30,7 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background:  rgba(255, 0, 0, 0.734); 
   }
-.container{
+.container-fluid{
     width: 100%;
     min-height: 100vh;
     background-color: black;
@@ -570,4 +570,189 @@ q {
 }
 .ques td{
     margin-right: 50px;
+}
+@media(max-width: 800px){
+    .logomaker{
+        width: auto;
+        margin: auto;
+    }
+    .logomaker h1{
+        font-size: 50px;
+        margin-left: -50px;
+    }
+    .logomaker p{
+        font-size: 30px;
+        margin-left: -50px;
+        margin-top: -5px;   
+    }
+    .logomaker img{
+        display: none;
+    }
+    input{
+        width: 400px;
+        margin-left: -50px;
+    }
+ .about h1{
+	font-size: 30px;
+    text-align: center;
+ }
+ .about p{
+    font-size: 17px;
+    text-align: center;
+ }
+ .about-2 h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 200px;
+ }
+ .about-2 p{
+    font-size: 17px;
+    text-align: center;
+    margin: 500px 10px 10px 10px;
+ }
+ .about-2 img{
+    width: 400px;
+    margin-top: -670px;
+ }
+ .about-2 button{
+    margin-left: 225px;
+ }
+.about-3 h1{
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.about-3 p{
+    font-size: 17px;
+    text-align: center;
+    margin: 400px 20px 10px 20px;
+
+}
+.about-3 img{
+    width: 400px;
+    margin-top: -600px;
+ }
+ .about-3 button{
+    margin-left: 250px;
+}
+.about-2 .png{
+    margin-top: -800px;
+}
+.createlogo input{
+    width: 400px;
+    margin-left: 50px;
+}
+.features{
+width: auto;
+height: auto;
+}
+.head{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features .about-2 h1{
+    text-align: center;
+   /* font-size: 25px;*/
+    margin: 30px 0px 0px 30px;
+}
+.features .about-2 img{
+    position: relative;
+    margin-top: -750px;
+}
+.dream{
+    width: auto;
+    height: auto;
+}
+.dream h1{
+    text-align: center;
+   /* font-size: 25px;*/
+    margin: 30px 0px 0px 30px;
+    padding-top: 10px;
+}
+.dream p{
+    font-size: 17px;
+    text-align: center;
+    margin-left: -50px;
+}
+.dream .list{
+    margin-top: 500px;
+}
+.dream .list h1{
+    text-align: left;
+}
+.dream .list p{
+    width: auto;
+    font-size: 17px;
+    text-align: left;
+    margin: 0;
+}
+.dream .list i{
+    margin: 10px;
+    width: 20px;
+}
+.dream img{
+    position: relative;
+    margin-top: -900px;
+}
+table{
+    margin-left: 30px;
+}
+.logo1{
+    margin-left: 20px;
+}
+.col-1{
+    display: none;
+}
+.logos button{
+    margin-left: 250px;
+}
+.makelogo ,.make, .tips{
+    display: none;
+}
+.ques1 h1{
+    text-align: left;
+    margin-left: -100px;
+}
+.ques1 p{
+    width: 700px;
+    text-align: left;
+    margin-left: -100px;
+    margin-right: auto;
+}
+.ques2{
+    display: none;
+}
+}
+@media screen and (max-width:525px){
+    .footer{
+        width: auto;
+        height: auto;
+        position: relative;
+        top: 0;
+        padding-bottom: 200px;
+    }
+    .footer1{
+        text-align: center;
+        margin-left: -200px;
+    }
+    .hr{
+        width: 300px;
+        margin-left: 100px;
+    }
+    .footer2{
+        display: none;
+    }
+    .ht{
+        margin-left: -150px;
+    }
+    .details{
+        display: none;
+    }
+    .icons{
+        margin:0px 0px 0px 30px;
+    }
+    button{
+        margin-top: 30px;
+    }
 }

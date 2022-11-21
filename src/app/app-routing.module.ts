@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutusComponent } from './admin/aboutus/aboutus.component';
 import { BusinesscardComponent } from './admin/businesscard/businesscard.component';
@@ -7,6 +7,8 @@ import { FooterComponent } from './admin/footer/footer.component';
 import { HeaderComponent } from './admin/header/header.component';
 import { LoginComponent } from './admin/login/login.component';
 import { LogomakerComponent } from './admin/logomaker/logomaker.component';
+import { EditlogoComponent } from './admin/logomaker/logoselection/editlogo/editlogo.component';
+import { LogoselectionComponent } from './admin/logomaker/logoselection/logoselection.component';
 import { RegisterComponent } from './admin/register/register.component';
 import { SocialComponent } from './admin/social/social.component';
 
@@ -20,7 +22,9 @@ const routes: Routes = [
   {path:'footer',component:FooterComponent},
   {path:'social',component:SocialComponent},
   {path:'contactus',component:ContactusComponent},
-  {path:'aboutus',component:AboutusComponent}
+  {path:'aboutus',component:AboutusComponent},
+  {path:'logoselection',component:LogoselectionComponent},
+  {path:'editlogo',component:EditlogoComponent}
 
 ];
 

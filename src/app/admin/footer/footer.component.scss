@@ -58,6 +58,7 @@ footer ul li{
     line-height: 30px;
     color: white;
     cursor: pointer;
+    user-select: none;
 }
 footer ul li:hover{
     color: rgba(255, 0, 0, 0.734);
@@ -86,12 +87,82 @@ footer ul li:hover{
     padding-right: 270px;
     display: flex;
     flex-direction: row;
+    
 }
-.icon{
+i{
     width: 100%;
     height: 100%;
-   margin: 15px;
+    margin: 15px;
+    color: white;
+
 }
-.icon:hover{
+i:hover{
     color: rgba(255, 0, 0, 0.734);
+}
+button{
+    width: 150px;
+    height: 60px;
+    float: right;
+    margin-top: -220px;
+    margin-right: 150px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    background-color:  rgba(255, 0, 0, 0.74);
+}
+button:hover{
+    background-color: red;
+}
+@media(max-width:800px){
+    .footer1{
+        margin-left: -150px;
+    }
+    .footer2{
+        margin-left: 40px;
+    }
+    .ht{
+        margin-left: -150px;
+    }
+    .details{
+        margin-left: -150px;
+    }
+    .icons{
+        margin-right: -200px;
+    }
+    button{
+        margin-right: 30px;
+    }
+}
+@media screen and (max-width:525px){
+    .footer{
+        width: auto;
+        height: auto;
+        position: relative;
+        top: 0;
+        padding-bottom: 200px;
+    }
+    .footer1{
+        text-align: center;
+        margin-left: -200px;
+    }
+    .hr{
+        width: 300px;
+        margin-left: 100px;
+    }
+    .footer2{
+        display: none;
+    }
+    .ht{
+        margin-left: -150px;
+    }
+    .details{
+        display: none;
+    }
+    .icons{
+        margin:0px 0px 0px 30px;
+    }
+    button{
+        margin-top: 30px;
+    }
 }

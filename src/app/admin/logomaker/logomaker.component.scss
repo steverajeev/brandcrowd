@@ -6,10 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    width: 100%;
+    width: auto;
     height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden !important;
     
 }
 ::-webkit-scrollbar {
@@ -30,7 +30,7 @@ body{
   ::-webkit-scrollbar-thumb:hover {
     background:  rgba(255, 0, 0, 0.734); 
   }
-.container{
+.container-fluid{
     width: 100%;
     min-height: 100vh;
     background-color: black;
@@ -88,7 +88,7 @@ button:hover{
 
 .about{
     box-sizing: border-box;
-    width: 100%;
+    width: auto;
     height: 100hv;
     margin-top: 70px;
 }
@@ -105,19 +105,22 @@ button:hover{
 }
 
 .about-2 h1{
+    width: auto;
     box-sizing: border-box;
     font-size: 35px;
     font-weight: 600;
-    text-align: left;
     margin-top: 120px;
     margin-left: 140px;
+    display: flex;
 }
 .about-2 p{
+    flex-basis: 31%;
+    width: fit-content;
     text-align: left;
     color: rgb(143, 143, 143);
     margin: 30px 700px 20px 150px;
     letter-spacing: 1px; 
-    line-height: 20px;
+   /* margin: auto;*/
 }
 .about-2 img{
     float: right;
@@ -281,7 +284,7 @@ td p{
 .logo1{
     margin-top: 50px;
     margin-left: 270px;
-    margin-right: -50px;
+    margin-right: 100px;
 }
 .logo1 tr{
     margin: 10px;
@@ -290,7 +293,7 @@ td p{
     width: 220px;
     height: 220px;
     float: left;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     align-items: center;
     cursor: pointer;
 
@@ -366,7 +369,7 @@ td p{
     background-color: rgb(234, 234, 234);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.mySlides {
+.carousel-caption {
     user-select: none;
     cursor: grab;
     display: none;
@@ -566,3 +569,337 @@ q {
 .ques td{
     margin-right: 50px;
 }
+@media(max-width: 800px){
+    .logomaker{
+        width: auto;
+        margin: auto;
+    }
+    .logomaker h1{
+        font-size: 50px;
+        margin-left: -50px;
+    }
+    .logomaker p{
+        font-size: 30px;
+        margin-left: -50px;
+        margin-top: -5px;   
+    }
+    .logomaker img{
+        display: none;
+    }
+    input{
+        width: 400px;
+        margin-left: -50px;
+    }
+ .about h1{
+	font-size: 30px;
+    text-align: center;
+ }
+ .about p{
+    font-size: 17px;
+    text-align: center;
+ }
+ .about-2 h1{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 200px;
+ }
+ .about-2 p{
+    font-size: 17px;
+    text-align: center;
+    margin: 500px 10px 10px 10px;
+ }
+ .about-2 img{
+    width: 400px;
+    margin-top: -670px;
+ }
+ .about-2 button{
+    margin-left: 225px;
+ }
+.about-3 h1{
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.about-3 p{
+    font-size: 17px;
+    text-align: center;
+    margin: 400px 20px 10px 20px;
+
+}
+.about-3 img{
+    width: 400px;
+    margin-top: -600px;
+ }
+ .about-3 button{
+    margin-left: 250px;
+}
+.about-2 .png{
+    margin-top: -800px;
+}
+.createlogo input{
+    width: 400px;
+    margin-left: 50px;
+}
+.features{
+width: auto;
+height: auto;
+}
+.head{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features .about-2 h1{
+    text-align: center;
+   /* font-size: 25px;*/
+    margin: 30px 0px 0px 30px;
+}
+.features .about-2 img{
+    position: relative;
+    margin-top: -750px;
+}
+.dream{
+    width: auto;
+    height: auto;
+}
+.dream h1{
+    text-align: center;
+   /* font-size: 25px;*/
+    margin: 30px 0px 0px 30px;
+    padding-top: 10px;
+}
+.dream p{
+    font-size: 17px;
+    text-align: center;
+    margin-left: -50px;
+}
+.dream .list{
+    margin-top: 500px;
+}
+.dream .list h1{
+    text-align: left;
+}
+.dream .list p{
+    width: auto;
+    font-size: 17px;
+    text-align: left;
+    margin: 0;
+}
+.dream .list i{
+    margin: 10px;
+    width: 20px;
+}
+.dream img{
+    position: relative;
+    margin-top: -900px;
+}
+table{
+    margin-left: 30px;
+}
+.logo1{
+    margin-left: 20px;
+}
+.col-1{
+    display: none;
+}
+.logos button{
+    margin-left: 400px;
+}
+.makelogo ,.make, .tips{
+    display: none;
+}
+.ques1 h1{
+    text-align: left;
+    margin-left: -100px;
+}
+.ques1 p{
+    width: 700px;
+    text-align: left;
+    margin-left: -100px;
+    margin-right: auto;
+}
+.ques2{
+    display: none;
+}
+}
+@media screen and (max-width:525px){
+    .logomaker{
+        width: auto;
+        height: auto;
+        margin: auto;
+    }
+    .logomaker h1{
+        font-size: 50px;
+        margin-left: -40px;
+        margin-top: -200px;
+    }
+    .logomaker p{
+        font-size: 30px;
+        margin-left: -50px;
+        margin-top: -5px;   
+    }
+    .logomaker img{
+        display: none;
+    }
+    input{
+        width: 200px;
+        margin-left: -100px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+ .about h1{
+	font-size: 30px;
+    text-align: center;
+ }
+ .about p{
+    font-size: 17px;
+    text-align: center;
+ }
+ .about-2 h1{
+    font-size: 30px;
+    margin: auto;
+    padding: 20px 45px;
+ }
+ .about-2 p{
+    font-size: 17px;
+    text-align: center;
+    margin: 500px 10px 10px 10px;
+ }
+ .about-2 img{
+    width: 400px;
+    margin-top: -750px;
+    margin-right: 20px;
+    
+ }
+ .about-2 button{
+    margin: 0 0 0 100px;
+    padding: 20px;
+ }
+.about-3 h1{
+    font-size: 30px;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+.about-3 p{
+    font-size: 17px;
+    text-align: center;
+    margin: 400px 20px 10px 20px;
+
+}
+.about-3 img{
+    width: 400px;
+    margin-top: -650px;
+    margin-left: 20px;
+ }
+ .about-3 button{
+    margin-left: 120px;
+}
+.about-2 .png{
+    margin-top: -900px;
+}
+.createlogo{
+    height: auto;
+}
+.createlogo input{
+    width: 400px;
+    margin-left: 50px;
+}
+.createlogo button{
+    margin-left: 130px;
+}
+.about-4{
+    display: none;
+}
+.table-2{
+    display: none;
+}
+.features{
+width: auto;
+height: auto;
+}
+.head{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.features .about-2 h1{
+    text-align: center;
+   /* font-size: 25px;*/
+    margin: 30px 0px 0px 30px;
+}
+.features .about-2 img{
+    position: relative;
+    margin-top: -850px;
+}
+.dream{
+    width: auto;
+    height: auto;
+}
+.dream h1{
+    text-align: center;
+   /* font-size: 25px;*/
+    margin: 30px 0px 0px 0px;
+    padding-top: 10px;
+}
+.dream p{
+    font-size: 17px;
+    text-align: center;
+    margin-left: -50px;
+}
+.dream .list{
+    margin-top: 500px;
+}
+.dream .list h1{
+    text-align: left;
+}
+.dream .list p{
+    width: auto;
+    font-size: 17px;
+    text-align: left;
+    margin: 0;
+}
+.dream .list i{
+    margin: 10px;
+    width: 20px;
+}
+.dream img{
+    position: relative;
+    margin-top: -1000px;
+    margin-right: 0px;
+}
+table{
+    margin-left: 30px;
+}
+.logo1{
+    margin-left: 1px;
+}
+.col-2{
+   display: none;
+}
+.col-1{
+    display: none;
+}
+.logos button{
+    margin-left: 100px;
+}
+.makelogo ,.make, .tips{
+    display: none;
+}
+.ques1 h1{
+    width: 450px;
+    text-align: left;
+    margin-left: -150px;
+}
+.ques1 p{
+    width: 450px;
+    text-align: left;
+    margin-left: -150px;
+    margin-right: auto;
+}
+.ques2{
+    display: none;
+}
+}
+
+
